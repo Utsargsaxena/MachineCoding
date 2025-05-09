@@ -1,0 +1,65 @@
+/* Full screen dark background */
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Center card */
+.post-card {
+  width: 100%;
+  max-width: 360px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+/* Image on top */
+.post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Content block */
+.post-content {
+  padding: 1rem 1.5rem;
+}
+
+.post-title {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.post-description {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 12px;
+}
+
+/* Star row */
+.stars-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.star {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* Feedback text */
+.rating-text {
+  font-size: 14px;
+  margin-top: 12px;
+  color: #ccc;
+}
