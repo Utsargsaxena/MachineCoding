@@ -1,0 +1,94 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+.outer-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+
+.post-feed {
+  width: 100%;
+  max-width: 760px;
+  padding: 40px 30px;
+  background: aliceblue;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.feed-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.post-structure {
+  background-color: #f9f9fb;
+  border: 1px solid #e0e0e0;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.post-structure:hover {
+  background-color: #f1f3f5;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.post-structure h4 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.post-structure h6 {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 6px;
+}
+
+.post-structure p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.page-btn,
+.nav-btn {
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #e3e3e3;
+  transition: background 0.2s ease;
+}
+
+.page-btn:hover,
+.nav-btn:hover {
+  background-color: #cbd3d9;
+}
+
+.page-btn.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
