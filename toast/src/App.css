@@ -1,0 +1,115 @@
+/* Fullscreen center container */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+/* Form container */
+.form-box {
+  background-color: white;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Form heading */
+.form-heading {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: #343a40;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form inputs */
+.form-input,
+.form-textarea {
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #0d6efd;
+}
+
+/* Toast Styling */
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background: #0d6efd;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 320px;
+  animation: slideDown 0.3s ease, fadeout 0.5s ease 2.5s;
+}
+
+/* Close (X) icon */
+.toast-close {
+  margin-left: 12px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Toast animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Button Styling */
+.submit-button {
+  background: linear-gradient(to right, #0d6efd, #2563eb);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #0b5ed7, #1d4ed8);
+}
