@@ -1,0 +1,79 @@
+/* Center the app */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card UI */
+.postCard {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+/* Heading & content */
+.postTitle {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.postText {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Upload button */
+.upload {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.upload:hover {
+  background-color: #43a047;
+}
+
+/* Preview image and close button */
+.previewBox {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.previewImg {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Close (✖) button */
+.closeBtn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+}
